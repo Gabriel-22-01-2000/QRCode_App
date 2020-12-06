@@ -1,4 +1,4 @@
-# sql_flutter
+# QR Code App
 
 A new Flutter project.
 
