@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:provider/provider.dart';
 import 'package:sql_flutter/providers/list_scan_provider.dart';
 import 'package:sql_flutter/utils/utils.dart';
@@ -8,9 +9,8 @@ class ScanButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       onPressed: () async {
-        final barcodeScanRes = 'geo:18.646141, -91.790321';
-        print(barcodeScanRes);
-
+        String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+            '#3D8BEF', 'Cancelar', false, ScanMode.QR);
         if (barcodeScanRes == '-1') {
           return;
         }
