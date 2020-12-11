@@ -19,7 +19,7 @@ class _MapaPageState extends State<MapaPage> {
 
     final CameraPosition puntoInicial = CameraPosition(
       target: scan.getLatng(),
-      zoom: 25,
+      zoom: 18,
       tilt: 50,
     );
 
@@ -40,7 +40,7 @@ class _MapaPageState extends State<MapaPage> {
               controller
                   .animateCamera(CameraUpdate.newCameraPosition(CameraPosition(
                 target: scan.getLatng(),
-                zoom: 25,
+                zoom: 18,
                 tilt: 50,
               )));
             },

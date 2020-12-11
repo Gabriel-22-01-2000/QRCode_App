@@ -2,7 +2,7 @@
     package="com.example.sql_flutter">
    <application
         android:label="sql_flutter"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
           <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="AIzaSyCngo7DNsg1TmuOgvHe9xPXb1wY5rQIp9M"/>
         <activity
